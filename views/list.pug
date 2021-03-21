@@ -1,0 +1,18 @@
+- const title = 'Шаблонизатор';
+html
+  head
+    meta(name='author' content='Moseev Evgeny')
+    title= title
+  body
+    h4#author(title='GossJS') Мосеев Евгений
+    h1= title
+    p Список логинов:
+      ol 
+        each item in list 
+          li= item.login
+    p Список паролей:
+      ol 
+        each item in list 
+          li= item.password
+
+        
